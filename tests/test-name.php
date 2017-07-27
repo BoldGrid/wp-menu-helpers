@@ -1,18 +1,32 @@
 <?php
+/**
+ * BoldGrid Source Code
+ *
+ * @copyright BoldGrid.com
+ * @version   $Id$
+ * @author    BoldGrid.com <wpb@boldgrid.com>
+ */
 
-//
-
+/**
+ * Boldgrid\WpMenuHelpers\Name Test class.
+ *
+ * @since 1.0.0
+ */
 class Test_Name extends WP_UnitTestCase {
 
 	/**
+	 * Setup.
 	 *
+	 * @since 1.0.0
 	 */
 	public function setUp() {
 
 	}
 
 	/**
+	 * Test Boldgrid\WpMenuHelpers\Name createUnique class.
 	 *
+	 * @since 1.0
 	 */
 	public function testCreateUnique() {
 		$name = "Catfish Menu";
@@ -31,6 +45,16 @@ class Test_Name extends WP_UnitTestCase {
 
 		$uniqueName = \BoldGrid\WpMenuHelpers\Name::createUnique( $name );
 		$this->assertSame( $uniqueName, $name . '-3' );
+
+		/*
+		 * Make sure -2 through -100 menu names exist. After this limit,
+		 * createUnique will return false.
+		 */
+		for( $x = 4; $x <= 100; $x++ ) {
+			wp_create_nav_menu( $name . '-' . $x );
+		}
+		$uniqueName = \BoldGrid\WpMenuHelpers\Name::createUnique( $name );
+		$this->assertSame( $uniqueName, false );
 	}
 }
 
