@@ -12,4 +12,4 @@ composer require boldgrid/wp-menu-helpers
 ## Changelog ##
 
 ### 1.0.0 ###
-* Initial commit.
+* New static method to calculate unique menu name.
