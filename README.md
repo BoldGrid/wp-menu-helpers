@@ -1,11 +1,11 @@
-# BoldGrid Menu
+# BoldGrid WP Menu Helpers
 
 BoldGrid Menu classes.
 
 Using composer, you can get started quickly:
 
 ```php
-composer require boldgrid/library-menus
+composer require boldgrid/wp-menu-helpers
 
 ```
 

@@ -1,6 +1,6 @@
 {
-    "name": "boldgrid/library-menus",
-    "description": "A composer package for BoldGrid Menu.",
+    "name": "boldgrid/wp-menu-helpers",
+    "description": "A composer package for BoldGrid WP Menu Helpers.",
     "type": "library",
     "license": "GPL2.0",
     "authors": [
@@ -29,7 +29,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Boldgrid\\Library\\Menus\\": "src/Menus"
+            "Boldgrid\\WpMenuHelpers\\": "src/WpMenuHelpers"
         }
     }
 }
