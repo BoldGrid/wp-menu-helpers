@@ -3,6 +3,7 @@
 //
 
 class Test_Name extends WP_UnitTestCase {
+
 	/**
 	 *
 	 */
@@ -15,9 +16,14 @@ class Test_Name extends WP_UnitTestCase {
 
 		$menuId = wp_create_nav_menu( $uniqueName );
 
-		// The menu now exists, so the next name should appended with -1.
+		// The menu now exists, so the next name should appended with -2.
 		$uniqueName = \BoldGrid\WpMenuHelpers\Name::createUnique( $name );
-		$this->assertSame( $uniqueName, $name . '-1' );
+		$this->assertSame( $uniqueName, $name . '-2' );
+
+		$menuId = wp_create_nav_menu( $uniqueName );
+
+		$uniqueName = \BoldGrid\WpMenuHelpers\Name::createUnique( $name );
+		$this->assertSame( $uniqueName, $name . '-3' );
 	}
 }
 
