@@ -7,6 +7,13 @@ class Test_Name extends WP_UnitTestCase {
 	/**
 	 *
 	 */
+	public function setUp() {
+
+	}
+
+	/**
+	 *
+	 */
 	public function testCreateUnique() {
 		$name = "Catfish Menu";
 
