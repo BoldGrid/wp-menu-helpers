@@ -1,5 +1,5 @@
 {
-    "name": "boldgrid/bgmenu",
+    "name": "boldgrid/library-menus",
     "description": "A composer package for BoldGrid Menu.",
     "type": "library",
     "license": "GPL2.0",
@@ -29,7 +29,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Boldgrid\\Library\\Menu\\": "src/Menu"
+            "Boldgrid\\Library\\Menus\\": "src/Menus"
         }
     }
 }

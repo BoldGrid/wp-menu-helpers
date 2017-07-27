@@ -5,7 +5,7 @@ BoldGrid Menu classes.
 Using composer, you can get started quickly:
 
 ```php
-composer require boldgrid/bgmenu
+composer require boldgrid/library-menus
 
 ```
 
