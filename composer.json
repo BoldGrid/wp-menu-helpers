@@ -2,7 +2,7 @@
     "name": "boldgrid/wp-menu-helpers",
     "description": "A composer package for BoldGrid WP Menu Helpers.",
     "type": "library",
-    "license": "GPL2.0",
+    "license": "GPL-2.0-or-later",
     "authors": [
         {
             "name": "Joe C",
